@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up</title>
+    <link rel="stylesheet" href="style1.css" />
+    <script src="https://www.gstatic.com/firebasejs/9.17.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.17.2/firebase-firestore-compat.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/9.17.2/firebase-auth-compat.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="brand">USER DETAILS </h1>
+      <div class="wrapper">
+        <div class="company-info">
+         
+         
+        </div>
+        <div class="contact">
+          <div class="alert">Details stored succesfully</div>
+          <form id="contactForm">
+            <p>
+              <label>Name</label>
+              <input type="text" name="name" id="name" required>
+            </p>
+           
+            <p>
+              <label>Email Address</label>
+              <input type="email" name="email" id="email" required>
+            </p>
+            <p>
+              <label>Phone Number</label>
+              <input type="text" name="phone" id="phone">
+            </p>
+            
+            <p class="full">
+              <button type="submit">Submit</button>
+            </p>
+          </form>
+        </div>
+      </div>
+      
+    </div>
+  
+    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+    <script src="main1.js"></script>
+  </body>
+  </html>

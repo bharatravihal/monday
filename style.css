@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("avblue.jpg");
+    background-size: cover;
+    background-image: center;
+    background-repeat: no-repeat;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Poppins',sans-serif;
+}
+header{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:20px 100px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index:99 ;
+}
+.logo{
+    font: size 2em; 
+    color:orange ;
+    user-select:none ;
+} 
+.navigation a{
+    position: relative;
+    font-size: 1.5em;
+    color:azure;
+    text-decoration:none;
+    font-weight:500 ;
+    margin-left:3px;
+    justify-content: space-between;
+}
+.navigation a::after{
+    content:'';
+    position: absolute;
+    bottom:-6px;
+    left:5px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    color: black;
+    border-radius: 5px;
+    transform:scale(0);
+    transition:transform .5;
+}
+.navigation a:hover::after{
+    transform:scaleX(1);
+}
+.navigation .btnlogin-popup{
+    width: 130px;
+    height:50px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.5em;
+    color:#fff;
+    font-weight: 485;
+    margin-left: 40px;
+    transition: .5s;
+}
+.navigation .btnlogin-popup:hover{
+     background:grey;
+     color:#162938;
+}
+
+
+.form-box h2{
+    font-size: 2em;
+    color:#162938;
+    text-align:center;
+}
+
+
+.btn{
+    width:100%;
+    height:45px;
+    background: none;
+    color:#fff;
+  }
+  .login-register{
+    font-size:.9em;
+    color:#162938;
+    text-align: center;
+    font-weight:500;
+  }
+
+
+
+.form {
+    width: 400px;
+    border-radius: 5px;
+    background-color:#162938;
+    background:blur(30);
+    /* height:fit-content;  */
+    padding: 5px 10px;
+}
+
+label {
+    display: block;
+    font-weight: bolder;
+    margin: 5px 0px;
+}
+
+input {
+    width: 100%;
+    padding: 8px 5px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#submit-btn {
+    border: none;
+    background-color: grey;
+    width: 100%;
+    padding: 10px 8px;
+    color: white;
+    font-weight: bolder;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin: 9px 0px;
+}
+
+p {
+    font-size: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bolder;
+}
